@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>"Gen Empire"</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css" />
+        <script>
+            var i = 0;
+            var images = [];
+            var time = 4000;
+
+            images[0] = "../Images/bk1.jpg"
+            images[1] = "../Images/genboyz.jpg"
+            images[2] = "../Images/bk1.jpg"
+
+            function changeImg(){
+                document.slide.src = images[i];
+
+                if(i < images.length - 1){
+                    i++;
+                } else {
+                    i = 0;
+                }
+
+                setTimeout("changeImg()", time);
+            }
+
+            window.onload = changeImg;
+
+        </script>
+    </head>
+    <body>
+        <div class="banner">
+            <h1>GEN EMPIRE</h1>
+        </div>
+
+        <div class="nav">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+        </div>
+        
+        <div class="connect-about-slide">
+            <div class="about">
+                <h1>KDM and Genysis enthusiasts of the bay area.. We love our cars, our creativity, and mutual respect for eveyones builds. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi numquam pariatur sequi. Sapiente laboriosam modi nihil similique voluptatem quidem ut voluptatum? Sapiente libero natus sed atque aliquam hic nisi!</h1>
+            </div>
+    
+            <div class="slideshow">
+                <img name="slide">
+            </div>
+        </div>
+
+        <div class="contact">
+            <h1>000-000-0000</h1>
+
+            <a href="https://www.instagram.com">
+                <i class="fab fa-instagram"></i>
+            </a>
+            
+        </div>
+
+
+        
+        
+        
+    </body>
+</html>
